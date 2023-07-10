@@ -10,12 +10,12 @@ python -m venv venv
 ```
 .\venv\Scripts\activate
 ```
-4. Install pytest using pip (having virtual env activated)
+4. Install [pytest](https://docs.pytest.org/en/7.4.x/getting-started.html) using pip (having virtual env activated)
 ```
 python -m pip install pytest
 ```
 
-5. Install AltTester package using pip
+5. Install [AltTester](https://pypi.org/project/AltTester-Driver/) package using pip
 
 ```
 pip install AltTester-Driver
