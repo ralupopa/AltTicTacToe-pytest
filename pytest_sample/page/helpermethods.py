@@ -11,3 +11,10 @@ class HelperMethods:
 
     def slot_number(self, number):
         return self.altdriver.wait_for_object(By.PATH, "/Canvas/MainContainer/Board/Slots/Slot" + number + "/Text (TMP)")
+    
+    def flow_slots_played(self, slots):
+        for slot in slots:
+            place = self.slot_number(slot)
+            assert place is not None
+            self.altdriver.click(place.get_screen_position())
+            #place.click()

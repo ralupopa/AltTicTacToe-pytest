@@ -28,6 +28,11 @@ In order for pytest to be able to identify test classes, used prefix `test_` for
 pytest
 ```
 
+Use `-s` in order to see printed output:
+```
+pytest -s <specific_file.py>
+```
+
 In order to run tests which use `unittest` [unit testing framework](https://docs.python.org/3/library/unittest.html)
 ```
 python -m unittest test_recorder.py

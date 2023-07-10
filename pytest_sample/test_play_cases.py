@@ -13,7 +13,8 @@ class TestPlay:
 
         play = self.helper_methods.play_button
         assert play is not None
-        self.altdriver.click(play.get_screen_position())
+        #self.altdriver.click(play.get_screen_position())
+        play.click()
 
         TextTMP = self.helper_methods.slot_number("1")
         self.altdriver.click(TextTMP.get_screen_position())
