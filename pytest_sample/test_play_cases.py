@@ -30,3 +30,5 @@ class TestPlay:
         self.altdriver.click(TextTMP6.get_screen_position())
         TextTMP7 = self.helper_methods.slot_number("4")
         self.altdriver.click(TextTMP7.get_screen_position())
+
+        self.helper_methods.assert_win_info("Player X wins!")

@@ -17,3 +17,5 @@ class TestPlay:
 
         flow = ["1", "5", "9", "3", "7", "8", "4"]
         self.helper_methods.flow_slots_played(flow)
+
+        self.helper_methods.assert_win_info("Player X wins!")
