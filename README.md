@@ -37,3 +37,7 @@ In order to run tests which use `unittest` [unit testing framework](https://docs
 ```
 python -m unittest test_recorder.py
 ```
+
+### Pytest useful
+
+Parametrizing test functions using [pytest.fixture()](https://docs.pytest.org/en/7.4.x/how-to/parametrize.html)
