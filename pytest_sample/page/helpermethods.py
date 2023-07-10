@@ -1,4 +1,4 @@
-from alttester import AltDriver, By
+from alttester import By
 
 class HelperMethods:
 

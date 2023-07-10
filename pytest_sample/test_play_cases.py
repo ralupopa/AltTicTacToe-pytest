@@ -1,4 +1,4 @@
-from alttester import AltDriver, By
+from alttester import AltDriver
 from page.helpermethods import HelperMethods
 
 class TestPlay:

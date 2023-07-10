@@ -1,5 +1,5 @@
 import unittest
-from alttester import By, AltKeyCode, AltDriver
+from alttester import By, AltDriver
 
 class MyTests(unittest.TestCase):
 
