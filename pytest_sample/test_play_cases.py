@@ -1,5 +1,6 @@
-from alttester import AltDriver
+from alttester import AltDriver, By
 from page.helpermethods import HelperMethods
+import time
 
 class TestPlay:
 
@@ -32,3 +33,17 @@ class TestPlay:
         self.altdriver.click(TextTMP7.get_screen_position())
 
         self.helper_methods.assert_win_info("Player X wins!")
+
+    def test_interact_with_alttester_panel(self):
+        self.altdriver.load_scene("StartScene",True)
+
+        alttester_logo = self.altdriver.wait_for_object(By.PATH, '//AltDialog/Icon', timeout = 3)
+        assert alttester_logo is not None
+        alttester_logo.click()
+        object_port = self.altdriver.wait_for_object(By.PATH, '//PortInputField/Text', timeout = 3)
+        assert object_port is not None
+        assert object_port.get_text() == "13000"
+
+        # restart_button = self.altdriver.wait_for_object(By.PATH, '//RestartButton', timeout = 3)
+        # restart_button.click()
+        # time.sleep(5)
